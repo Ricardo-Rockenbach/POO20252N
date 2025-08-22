@@ -49,7 +49,7 @@ switch (escolha) {
 console.table(p);
 
 function treinarPoderAtaque (person: Personagem): void {
-    person.poderAtaque += 3 + p.poderAtaque*1.1;
+    person.treinarPoderAtaque();
 }
 
 console.table(p);
