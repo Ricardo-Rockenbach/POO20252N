@@ -4,11 +4,11 @@ export class Personagem{
     raca: string;
     nivel: number;
     arma: string;
-    manaAtual: number
-    manaMaxima: number
-    vidaAtual: number
-    vidaMaxima: number
-    poderAtaque: number
+    manaAtual: number;
+    manaMaxima: number;
+    vidaAtual: number;
+    vidaMaxima: number;
+    poderAtaque: number;
 
 
     constructor (nome:string) {
