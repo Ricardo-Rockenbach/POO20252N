@@ -44,10 +44,6 @@ switch (escolha) {
 
 }
 
-
-
-console.table(p);
-
 function treinarPoderAtaque (person: Personagem): void {
     person.treinarPoderAtaque();
 }
