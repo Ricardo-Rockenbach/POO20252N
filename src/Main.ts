@@ -21,6 +21,8 @@ console.log("+------------MENU--------------+");
 console.log("|1. Treinar Poder de Ataque    |");
 console.log("|2. Ver Status                 |");
 console.log("|3. Checar se personagem vive  |");
+console.log("|4. Receber Dano               |");
+console.log("|5. Encontrar Equipamento      |");
 console.log("|9. Sair                       |");
 console.log("+------------------------------+");
 
@@ -40,6 +42,12 @@ switch (escolha) {
     case 3:
         console.log(p.estaVivo()? "Personagem vivo": "Personagem subiu!")    
         break;
+    case 4:
+        receberDano(p);
+        break;
+    case 5:
+        encontrarEquipamento(p);
+        break;
 
     default:
         console.log("Opção Inválida")
@@ -50,6 +58,15 @@ switch (escolha) {
 
 function treinarPoderAtaque (person: Personagem): void {
     person.treinarPoderAtaque();
+}
+
+function receberDano (person: Personagem): void {
+    const tipoDano: string = teclado("Digite o tipo de dano (Leve, Moderado, Pesado): ").toLocaleUpperCase();
+    person.receberDano(tipoDano);
+}
+
+function encontrarEquipamento (person: Personagem): void {
+    person.encontrarEquipamento();
 }
 
 console.table(p);

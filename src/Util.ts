@@ -19,5 +19,5 @@ export class Util {
 for (let i = 0; i < 10; i++ ) {
     const nome = Util.gerarNome()
     const email = Util.gerarEmail(nome)
-    console.log(nome, email)
+    //console.log(nome, email)
 }
